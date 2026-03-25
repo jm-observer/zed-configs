@@ -1,0 +1,40 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-d": "editor::DeleteLine",
+      "ctrl-/": ["editor::ToggleComments", { "advance_downwards": false }],
+      "alt-/": "editor::ToggleCodeActions",
+      "alt-f": "editor::Fold",
+      "alt-left": "pane::GoBack",
+      "alt-right": "pane::GoForward",
+      "alt-n": [
+        "editor::GoToDiagnostic",
+        { "severity": { "min": "error", "max": "error" } },
+      ],
+      "ctrl-shift-t": "project_symbols::Toggle",
+      "shift shift": "file_finder::Toggle",
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-shift-x": "task::Spawn",
+      "alt-x": "task::Rerun",
+      "ctrl-shift-m": "diagnostics::Deploy",
+    },
+  },
+]
