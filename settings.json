@@ -7,11 +7,16 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "edit_predictions": {
+    "provider": "zed"
+  },
+  "bottom_dock_layout": "left_aligned",
   "git_panel": {
     "tree_view": true,
   },
   "terminal": {
     // Use the new enum value “toggle_zoom” (the enum expects snake_case)
+    "dock": "bottom",
     "double_click_action": "toggle_zoom",
   },
   "icon_theme": "Colored Zed Icons Theme Dark",
@@ -120,23 +125,13 @@
   },
   "disable_ai": false,
   "agent": {
-    "play_sound_when_agent_done": "never",
-    "tool_permissions": {
-      "default": "allow",
-    },
-    "default_model": {
-      "provider": "local-show",
-      "model": "openai/gpt-oss-120b",
-    },
-    "inline_assistant_model": {
-      "provider": "ollama",
-      "model": "gemma3:latest",
-    },
+    "favorite_models": [],
+    "play_sound_when_agent_done": true,
+    "model_parameters": []
   },
   "vim_mode": false,
   "outline_panel": {
-    "button": true,
-    "dock": "left",
+    "button": true
   },
   "ui_font_size": 17.0,
   "buffer_font_size": 15.0,

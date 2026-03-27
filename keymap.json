@@ -37,4 +37,100 @@
       "ctrl-shift-m": "diagnostics::Deploy",
     },
   },
+  {
+    "context": "KeymapEditor",
+    "unbind": {
+      "alt-c": "keymap_editor::ToggleConflictFilter",
+    },
+  },
+  {
+    "context": "Pane",
+    "unbind": {
+      "alt-c": "search::ToggleCaseSensitive",
+    },
+  },
+  {
+    "context": "Editor && mode == full",
+    "bindings": {
+      "alt-c": "agent::AddSelectionToThread",
+    },
+  },
+  {
+    "context": "Editor && mode == full",
+    "unbind": {
+      "ctrl-l": "agent::AddSelectionToThread",
+    },
+  },
+  {
+    "context": "Editor && mode == full",
+    "unbind": {
+      "ctrl-shift-l": "agent::AddSelectionToThread",
+    },
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "alt-c": "agent::AddSelectionToThread",
+    },
+  },
+  {
+    "context": "Terminal",
+    "unbind": {
+      "ctrl-shift-.": "agent::AddSelectionToThread",
+    },
+  },
+  {
+    "context": "Editor && mode == full",
+    "unbind": {
+      "ctrl-shift-.": "agent::AddSelectionToThread",
+    },
+  },
+  {
+    "context": "AgentPanel",
+    "unbind": {
+      "alt-l": "agent::CycleFavoriteModels",
+    },
+  },
+  {
+    "context": "AcpThread > Editor",
+    "unbind": {
+      "alt-l": "agent::CycleFavoriteModels",
+    },
+  },
+  {
+    "context": "Editor && edit_prediction",
+    "unbind": {
+      "alt-l": "editor::AcceptEditPrediction",
+    },
+  },
+  {
+    "context": "GitCommit > Editor",
+    "unbind": {
+      "alt-l": "git::GenerateCommitMessage",
+    },
+  },
+  {
+    "context": "CommitEditor > Editor",
+    "unbind": {
+      "alt-l": "git::GenerateCommitMessage",
+    },
+  },
+  {
+    "context": "Pane",
+    "unbind": {
+      "alt-l": "search::ToggleSelection",
+    },
+  },
+  {
+    "context": "AgentPanel",
+    "bindings": {
+      "alt-c": "agent::AddSelectionToThread",
+    },
+  },
+  {
+    "context": "AgentPanel",
+    "unbind": {
+      "ctrl-shift-.": "agent::AddSelectionToThread",
+    },
+  },
 ]
